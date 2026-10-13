@@ -1,0 +1,15 @@
+
+  cat > .gitignore <<'EOF'
+  *.aux
+  *.bbl
+  *.bcf
+  *.blg
+  *.log
+  *.out
+  *.run.xml
+  *.synctex.gz
+  *.fls
+  *.fdb_latexmk
+  .auctex-auto/
+  .DS_Store
+  EOF
