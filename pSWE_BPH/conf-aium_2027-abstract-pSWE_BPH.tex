@@ -1,0 +1,137 @@
+\documentclass[11 pt,letterpaper]{article}
+
+% Compile with XeLaTeX or LuaLaTeX
+
+% Paper size and margins
+\usepackage[letterpaper,margin=0.7in]{geometry}
+
+% Font: Aptos, 11 pt
+\usepackage{fontspec}
+
+% Figures and captions
+\usepackage{wrapfig}
+\usepackage[font=footnotesize,skip=.5pt]{caption}
+
+
+% Math and units
+\usepackage{siunitx}
+
+% Author/affiliation formatting
+
+\usepackage{authblk}
+
+% Personal macros, if needed
+\input{../aux_files/personal_macros.sty}
+
+\graphicspath{{./figures/}}
+
+% Bibliography, if needed (after personal_macros, which loads biblatex)
+\addbibresource{../aux_files/references.bib}
+
+% Compact author and affiliation text
+\renewcommand{\Authfont}{\small}
+\renewcommand{\Affilfont}{\footnotesize\itshape}
+\setlength{\affilsep}{0.25em}
+
+% Compact author separators
+\renewcommand{\Authsep}{, }
+\renewcommand{\Authand}{, }
+\renewcommand{\Authands}{, }
+
+% Put affiliations on the same line, separated by semicolons
+\makeatletter
+\providecommand{\AB@affilsepx}{}
+\renewcommand{\AB@affilsepx}{\unskip; \space\protect\Affilfont}
+\makeatother
+
+% Reduce spacing
+\setlength{\parindent}{0.25in}
+\setlength{\parskip}{0pt}
+
+\title{
+\vspace{-1.9em}
+\bfseries\fontsize{15pt}{17pt}\selectfont
+AIUM 2027- Transrectal Shear Wave Elastography of the Prostate in BPH
+\vspace{-0.78em}
+}
+
+\author[a,b]{Julia Chaffin}
+\author[b,a]{Shane Wells}
+\author[a,b]{J.~Brian~Fowlkes}
+\author[a,b,c]{Kourosh Kalayeh}
+
+
+%% ---- affiliation pool (keep only those referenced by active authors) ----
+\affil[a]{Department of Biomedical Engineering, University of Michigan, Ann Arbor, Michigan, USA}
+\affil[b]{Department of Radiology, University of Michigan, Ann Arbor, Michigan, USA}
+\affil[c]{Department of Urology, University of Michigan, Ann Arbor, Michigan, USA}
+
+
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-3.9em}
+
+\noindent
+\textbf{Objectives}
+
+Lower urinary tract symptoms (LUTS) attributed to benign prostatic hyperplasia (BPH) are evaluated using anatomical measurements like prostate volume and prostate urethral length.
+However, prostate volume correlates only weakly with LUTS symptom severity, suggesting that tissue biomechanical properties may contribute independently to obstruction. Histological changes associated with BPH can increase periurethral stiffness, possibly affecting urinary flow in the absence of gland enlargement.
+Using transrectal shear wave elastography (SWE), tissue stiffness within different regions of the prostate can be measured noninvasively.
+We hypothesized that an increase in stiffness in the transition zone (TZ) could be associated with patient reported LUTS severity.
+The primary objective of this study was to determine the feasibility of collecting transrectal SWE measurements of the prostate stiffness,prostate volume, and International Prostate Symptom Score (IPSS). 
+
+
+
+\noindent
+\textbf{Methods}
+Twenty-eight men who were 18 years or older and had not undergone prior prostate treatment, including surgery and/or radiation, for cancer or BPH/LUTS, were recruited.
+Imaging was performed using a specialized transrectal Siemens Sequoia ultrasound system (Siemens Medical Solutions USA, Inc., Malvern, PA, USA) equipped for SWE Imaging.
+Stiffness measurements were obtained at six locations: sagittal prostate at the bladder (left and right), lateral prostate (left and right), and mid-prostate (left and right).
+Prostate volume (PV) and post-void residual (PVR) were calculated using standard ellipsoid measurements obtained from ultrasound imaging.
+Participants completed the International Prostate Symptom Score (IPSS) questionnaire.
+Scores including total, voiding,and storage were calculated.
+\\
+
+The average transition zone (TZ) stiffness was summarized using the median value of repeated captures. The maximum was avoided because a single extreme reading is prone to noise or calcification.
+Associations between stiffness and symptom severity were evaluated using linear and quadratic regression models relating TZ stiffness to total IPSS, voiding IPSS, and storage IPSS.
+Relationships between prostate volume and stiffness were also examined. 
+
+
+\noindent
+\textbf{Results}
+
+Transrectal SWE measurements were successfully acquired across all targeted prostate regions, demonstrating feasibility for multipoint assessment of prostate tissue stiffness.
+In the initial cohort (n=28), the median mid-transition-zone stiffness demonstrated weak nonlinear associations with total IPSS, voiding IPSS and storage IPSS.
+Quadratic models suggested a U-shaped relationship, with higher symptom scores observed at both low and high stiffness extremes and lower symptom scores at intermediate stiffness values.
+However, substantial variability was present, and the models explained only a limited proportion of symptom variation (total IPSS: R²=0.18; voiding IPSS: R²=0.16; storage IPSS: R²=0.15).
+\\
+Prostate volume exhibited only a weak negative association with stiffness and did not explain the observed extreme stiffness values, suggesting that tissue mechanical properties may provide information distinct from gland size alone.
+The proposed method enables fully automated needle detection and tracking in the context of MRI-compatible 4D US, providing localization and trajectory information during insertion.
+These results demonstrate the potential to reduce operator dependence and enable improved needle guidance for MR-US fusion-guided interventions.
+
+\noindent
+\textbf{Conclusion}
+
+Transrectal shear wave elastography is feasible for quantitative assessment of regional prostate stiffness.
+SWE measurements can successfully characterize tissue mechanical heterogeneity throughout the transition zone (TZ) and provide information that appears distinct from conventional anatomic measurements such as prostate volume.
+\\
+While prostate stiffness alone was not strongly predictive of LUTS severity, weak nonlinear associations were observed between mid-transition-zone stiffness and patient-reported voiding symptoms.
+The observed U-shaped quadratic relationship suggests that both compliant and stiff tissue may contribute to urinary dysfunction through different underlying mechanisms.
+Regional stiffness measurements may complement existing anatomical volume assessments and contribute to future models of obstruction and reported symptoms.
+These findings support continued investigation of transrectal SWE as a noninvasive biomarker of prostate biomechanics and highlight the need for larger studies incorporating symptom scores, urinary flow metrics, prostate anatomy, and tissue stiffness to better characterize the relationship between prostate structure and urinary function.
+
+\noindent
+
+
+\end{document}
+ParseError:  \renewcommand{\Authfont} when command \Authfont does not yet exist; use \newcommand
+
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:
